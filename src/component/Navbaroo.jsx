@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbaroo = () => {
   return (
@@ -8,9 +9,8 @@ const Navbaroo = () => {
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Home</a></li>
-      <li><a>Item 2</a></li>
-      <li><a>Item 3</a></li>
+      <li><Link to='/SingUp'>SingUp</Link></li>
+      <li><Link to='/LogIn'>SingIn</Link></li>
     </ul>
   </div>
 </div>
