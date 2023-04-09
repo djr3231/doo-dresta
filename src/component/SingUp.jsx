@@ -107,7 +107,24 @@ const SingUp = () => {
         </div>
         <div>
           <label className="block mb-1 text-gray-600 font-semibold">Confirm Password</label>
-          <input  type="password" className="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" />
+          <input {...register(
+            'conPassword', 
+            {
+                required:{
+                    value: true, 
+                    message: "conPassword required!!"
+                },
+                validate:{
+                    value:(val)=> getValues('password') == val ||'password not match!'
+
+                }
+
+            }
+            )
+          } 
+          
+          type="password" className="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" />
+          {errors.conPassword && <p>{errors.conPassword.message}</p>}
         </div>
       </div>
       <button className="mt-4 w-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-indigo-100 py-2 rounded-md text-lg tracking-wide">Register</button>
