@@ -1,13 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Typography,
-} from "@material-tailwind/react";
+import './App.css';
 
 function App() {
   const [count, setCount] = useState(0)
