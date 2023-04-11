@@ -17,12 +17,8 @@ const AppRoutes = () => {
                 <Route index element={<Home/>}/>
                 <Route path='/LogIn' element={<LogIn/>}/>
                 <Route path='/SingUp' element={<SingUp/>}/>
-                <Route path='*' element={<Page404/>}/>
-
-            
-
-
             </Route>
+            <Route path='*' element={<Page404/>}/>
 
         </Routes>
     </Router>
