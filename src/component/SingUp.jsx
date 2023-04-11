@@ -22,7 +22,7 @@ const SingUp = () => {
       <div className="space-y-4">
         <h1 className="text-center text-2xl font-semibold text-gray-600">Register</h1>
         <div >
-          <label className="block mb-1 text-gray-600 font-semibold">Username</label>
+          <label className="block mb-1 text-gray-600 font-semibold">Username <span className='text-red-600'>*</span></label>
           <input {...register(
             'username', 
             {
@@ -46,10 +46,10 @@ const SingUp = () => {
             }
             )
           } type="text" className="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" />
-          {errors.username && <p>{errors.username.message}</p>}
+          {errors.username && <p className='text-red-600'>{errors.username.message}</p>}
         </div>
         <div>
-          <label className="block mb-1 text-gray-600 font-semibold">Email</label>
+          <label className="block mb-1 text-gray-600 font-semibold">Email <span className='text-red-600'>*</span></label>
           <input {...register(
             'email', 
             {
@@ -74,10 +74,10 @@ const SingUp = () => {
             )
           }
           type="text" className="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" />
-          {errors.email && <p>{errors.email.message}</p>}
+          {errors.email && <p className='text-red-600'>{errors.email.message}</p>}
         </div>
         <div>
-          <label className="block mb-1 text-gray-600 font-semibold">Password</label>
+          <label className="block mb-1 text-gray-600 font-semibold">Password <span className='text-red-600'>*</span></label>
           <input {...register(
             'password', 
             {
@@ -103,10 +103,10 @@ const SingUp = () => {
           }
           
           type="password" className="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" />
-          {errors.password && <p>{errors.password.message}</p>}
+          {errors.password && <p className='text-red-600'>{errors.password.message}</p>}
         </div>
         <div>
-          <label className="block mb-1 text-gray-600 font-semibold">Confirm Password</label>
+          <label className="block mb-1 text-gray-600 font-semibold">Confirm Password <span className='text-red-600'>*</span></label>
           <input {...register(
             'conPassword', 
             {
@@ -124,7 +124,7 @@ const SingUp = () => {
           } 
           
           type="password" className="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" />
-          {errors.conPassword && <p>{errors.conPassword.message}</p>}
+          {errors.conPassword && <p className='text-red-600'>{errors.conPassword.message}</p>}
         </div>
       </div>
       <button className="mt-4 w-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-indigo-100 py-2 rounded-md text-lg tracking-wide">Register</button>
