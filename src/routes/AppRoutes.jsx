@@ -4,6 +4,7 @@ import Layout from '../layout/Layout';
 import LogIn from '../component/LogIn';
 import SingUp from '../component/SingUp';
 import Home from '../component/Home';
+import Page404 from '../component/Page404';
 
 const AppRoutes = () => {
 
