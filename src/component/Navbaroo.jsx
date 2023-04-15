@@ -9,8 +9,9 @@ const Navbaroo = () => {
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal px-1">
+      <li><Link to='/Counter'>Counter</Link></li>
       <li><Link to='/SingUp'>SingUp</Link></li>
-      <li><Link to='/LogIn'>SingIn</Link></li>
+      <li><Link to='/LogIn'>LogIn</Link></li>
     </ul>
   </div>
 </div>
