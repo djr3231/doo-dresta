@@ -8,18 +8,20 @@ export function Counter() {
   return (
     <div>
       <div>
-        <button
-        className="btn btn-success"
-          onClick={() => dispatch(increment())}
-        >
-          +
-        </button>
-        <span>{count}</span>
+       
+        
         <button
         className="btn btn-error"
           onClick={() => dispatch(decrement())}
         >
           -
+        </button>
+        <span className="bg-blue-700 box-content">{count}</span>
+        <button
+        className="btn btn-success"
+          onClick={() => dispatch(increment())}
+        >
+          +
         </button>
       </div>
     </div>
