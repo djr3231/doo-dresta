@@ -19,8 +19,7 @@ const SingUp = () => {
 
   const regexAlphabet = /^[a-zA-Z0-9@.]+$/;
   const regexEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,}$/i;
-  const regexPassword =
-    /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()_+`\-=[\]{};':"\\|,.<>/?]).+$/;
+  const regexPassword = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()_+`\-=[\]{};':"\\|,.<>/?]).+$/;
 const must =  <p> password <span className="font-bold" >must</span>  contain: 1 upper case, 1 lower case, 1 number, and 1 special character !</p>;
 
   return (

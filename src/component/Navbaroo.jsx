@@ -12,6 +12,7 @@ const Navbaroo = () => {
       <li><Link to='/Counter'>Counter</Link></li>
       <li><Link to='/SingUp'>SingUp</Link></li>
       <li><Link to='/LogIn'>LogIn</Link></li>
+      <li><Link to='/Admin'>Admin</Link></li>
     </ul>
   </div>
 </div>
