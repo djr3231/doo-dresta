@@ -23,9 +23,6 @@ const restaSlice = createSlice({
         state.resta_ar.push(restaObj);
         saveInLocalStorage(state.resta_ar)}
 
-
-      
-         
     }
     
 })
@@ -37,8 +34,6 @@ const saveInLocalStorage = (resta_ar) => {
 
 
 export const { getRestaurants, addResta } = restaSlice.actions;
-
-
 export default restaSlice.reducer;
 
 
