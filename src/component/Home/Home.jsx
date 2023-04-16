@@ -1,6 +1,12 @@
 import React from "react";
+import CardItem from "../Home/CardItem"
 
 const Home = () => {
+
+
+
+
+
   return (
     <div id="main-wraper">
       <div className="p-10 bg-gradient-to-r from-indigo-500 to-blue-800">
@@ -35,10 +41,16 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="container grid grid-cols-3 mx-auto ">
+        <div className="container grid grid-cols-3 mx-auto ">
+          <CardItem
 
 
-      </div>
+          />
+
+
+        </div>
+
+
     </div>
   );
 };
