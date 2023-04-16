@@ -1,15 +1,12 @@
 import AppRoutes from "./routes/AppRoutes"
 import { Provider } from 'react-redux'
-import myStore from './app/redux/store'
+import myStore from './redux/store'
+
 
 function App() {
   return (
-    <Provider  store={myStore}>
-
+    <Provider store={myStore}>
       <AppRoutes/>
-    
-
-
     </Provider>
 
    
