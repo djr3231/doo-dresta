@@ -238,4 +238,4 @@
     }
   ];
 
-  export default restaurants;
+ export default restaurants;

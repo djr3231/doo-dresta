@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CardItem from "../Home/CardItem"
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { getRestaurants } from "../../redux/featureas/restaSlice";
 
 const Home = () => {
 
-  const {restaurants_ar} = useSelector(
+  const dispatch = useDispatch()
+  const {resta_ar} = useSelector(
     (store)=> store.restaReducer
     
   )
-  console.log(restaurants_ar);
+  useEffect(()=>{
+    dispatch(getRestaurants())
+  },[])
+  console.log(resta_ar);
 
 
 
@@ -46,7 +51,12 @@ const Home = () => {
         </div>
       </div>
 
-        <div className="container grid grid-cols-3 mx-auto ">
+        <div className="container gap-6 grid grid-cols-3 mx-auto ">
+          <CardItem/>
+          <CardItem/>
+          <CardItem/>
+          <CardItem/>
+          <CardItem/>
           <CardItem/>
 
 

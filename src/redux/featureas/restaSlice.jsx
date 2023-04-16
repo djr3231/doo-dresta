@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { restaurants } from "./restaurants";
+import restaurants from "./restaurants";
+
 
 const initialState = {
     resta_ar:[],
