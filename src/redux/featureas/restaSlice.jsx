@@ -10,6 +10,7 @@ const initialState = {
 const restaSlice = createSlice({
     name:"restaurants",
     initialState,
+    
     reducers:{
 
 
@@ -20,7 +21,7 @@ const restaSlice = createSlice({
       addResta:(state, action)=>{
         const restaObj = action.payload;
         restaObj.id = Date.now();
-        
+
         state.resta_ar.push(restaObj);
         saveInLocalStorage(state.resta_ar)}
 
