@@ -240,13 +240,17 @@ const initialState = {
             "Pujol is a world-renowned restaurant that offers innovative and modern Mexican dishes made with fresh and locally-sourced ingredients.",
         },
       ],
-    toggle: false
+
 }
 
 const restaSlice = createSlice({
     name:"restaurants",
     initialState,
     reducers:{
+      getRestaurants:(state, action) =>{
+        const restaurants_ar = localStorage.getItem('restaurants_ar')
+        state.restaurants_ar = restaurants_ar ? JSON.parse(restaurants_ar) : [];
+      }
          
     }
     

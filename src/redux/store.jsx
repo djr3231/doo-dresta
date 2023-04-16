@@ -6,8 +6,8 @@ import counterReducer from "./featureas/counterSlice";
 const myStore = configureStore({
     reducer:{
 
-        restaReducer: restaReducer,
-        counterReducer: counterReducer
+        restaReducer,
+        counterReducer,
 
     }
 })

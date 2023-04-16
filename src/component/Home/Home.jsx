@@ -1,9 +1,14 @@
 import React from "react";
 import CardItem from "../Home/CardItem"
+import { useSelector } from "react-redux";
 
 const Home = () => {
 
-
+  const {restaurants_ar} = useSelector(
+    (store)=> store.restaReducer
+    
+  )
+  console.log(restaurants_ar);
 
 
 
