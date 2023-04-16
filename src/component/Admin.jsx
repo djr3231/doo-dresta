@@ -9,7 +9,7 @@ const {
     register,
     handleSubmit,
     formState: { errors },
-} = useForm;
+} = useForm();
 
 const onSub = (_bodyData) => {
     dispatch(addResta(_bodyData));
@@ -93,7 +93,7 @@ const Admin = () => {
                                         value: true,
                                         message: "price required!!",
                                     },
-                                    max: {
+                                    maxLength: {
                                         value: 1,
                                         message: "price max length is 20 char!",
                                     },
