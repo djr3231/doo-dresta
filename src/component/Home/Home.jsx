@@ -5,7 +5,6 @@ import { getRestaurants } from "../../redux/featureas/restaSlice";
 
 const Home = () => {
 
-  const dolar = "$"
 
   const dispatch = useDispatch()
   const {resta_ar} = useSelector(
