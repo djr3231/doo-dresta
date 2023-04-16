@@ -5,7 +5,7 @@ import LogIn from '../component/LogIn';
 import SingUp from '../component/SingUp';
 import Home from '../component/Home/Home';
 import Page404 from '../component/Page404';
-import { Counter } from '../features/counter/counter';
+import { Counter } from '../component/Counter';
 
 
 const AppRoutes = () => {
