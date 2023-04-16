@@ -11,3 +11,6 @@ const myStore = configureStore({
 
     }
 })
+
+
+export default myStore

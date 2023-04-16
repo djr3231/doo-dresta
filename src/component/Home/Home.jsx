@@ -42,10 +42,7 @@ const Home = () => {
       </div>
 
         <div className="container grid grid-cols-3 mx-auto ">
-          <CardItem
-
-
-          />
+          <CardItem/>
 
 
         </div>
