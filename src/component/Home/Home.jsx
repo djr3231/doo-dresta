@@ -60,7 +60,7 @@ const Home = () => {
           {
           resta_ar.map(
             ({id,name,city,price,main_image,cuisine,images,description},index)=>(
-              <div className="card bg-base-100 shadow-xl" >
+              <div className="card bg-base-100 shadow-xl" key={id} >
               <figure><img src={main_image} alt="Album" /></figure>
               <div className="card-body ">
                 <h2 className="card-title">{name}</h2>
