@@ -16,14 +16,16 @@ const restaSlice = createSlice({
 
       getRestaurants:(state, action) =>{
         const resta = localStorage.getItem('resta')
-        state.resta_ar = resta ? JSON.parse(resta) : restaurants },
+        state.resta_ar = resta ? JSON.parse(resta) : restaurants 
+      },
       
       addResta:(state, action)=>{
         const restaObj = action.payload;
         restaObj.id = Date.now();
 
         state.resta_ar.push(restaObj);
-        saveInLocalStorage(state.resta_ar)}
+        saveInLocalStorage(state.resta_ar)
+      }
 
     }
     
