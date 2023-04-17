@@ -1,28 +1,10 @@
 import React, { useEffect } from "react";
-import CardItem from "../Home/CardItem"
-import { useDispatch, useSelector } from "react-redux";
-import { getRestaurants } from "../../redux/featureas/restaSlice";
 
 const Home = () => {
 
-
-  const dispatch = useDispatch()
-  const {resta_ar} = useSelector(
-    (store)=> store.restaReducer
-    
-  )
-  useEffect(()=>{
-    dispatch(getRestaurants())
-  },[])
-  console.log(resta_ar);
-
-
-
-
-
   return (
     <div id="main-wraper">
-      <div className="p-10 bg-gradient-to-r from-indigo-500 to-blue-800">
+      <div className="p-10 bg-gradient-to-r from-Slate-700 to-Sky-950">
         <div className="container mx-auto ">
           <div className="flex min-h-100px items-center justify-center">
             <div className="px-6 text-center text-black md:px-12">
@@ -57,31 +39,20 @@ const Home = () => {
         <div className="container py-6 gap-6 grid grid-cols-3 mx-auto ">
 
 
-          {
-          resta_ar.map(
-            ({id,name,city,price,main_image,cuisine,images,description},index)=>(
-              <div className="card bg-base-100 shadow-xl" key={id} >
-              <figure><img src={main_image} alt="Album" /></figure>
+          
+              <div className="card bg-base-100 shadow-xl">
+              <figure><img src="https://image-tc.galaxy.tf/wijpeg-4z8fjv7bnp0dujenef6lp12xt/rooms-hero-1-optimised.jpg?width=1980&height=890" alt="Album" /></figure>
               <div className="card-body ">
-                <h2 className="card-title">{name}</h2>
+                <h2 className="card-title">name</h2>
                 <p><span>******</span> <span className="font-extrabold">|</span> <span>77 reviews</span> </p>
-                <p><label>{cuisine}</label> <span className="font-bold">$$$</span><span >$</span> <label> {city}</label> </p>
+                <p><label></label> <span className="font-bold">$$$</span><span >$</span> <label>city</label> </p>
                 <p className='font-extrabold' >ordered 3 times today</p>
                 <div className="card-actions justify-end">
                   <button className="btn btn-primary">Order new</button>
                 </div>
               </div>
             </div>
-            )
-
-          )}
-          
-          
-
-
-        </div>
-
-
+      </div>
     </div>
   );
 };
