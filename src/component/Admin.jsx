@@ -4,7 +4,7 @@ import { addResta } from "../redux/featureas/restaSlice";
 import { useForm } from "react-hook-form";
 
 const Admin = () => {
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const {
     reset,
     resetField,
@@ -15,7 +15,7 @@ const Admin = () => {
 
   const onSub = (_bodyData) => {
     dispatch(addResta(_bodyData));
-  console.log(_bodyData);
+    console.log(_bodyData);
   };
 
   const regexAlphabet = /^[a-zA-Z0-9]/;
@@ -243,7 +243,13 @@ const Admin = () => {
           <button className="mt-4 w-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-indigo-100 py-2 rounded-md text-lg tracking-wide">
             Add Restaurants
           </button>
-          <button className="mt-4 w-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-indigo-100 py-2 rounded-md text-lg tracking-wide">
+          <button
+            onClick={() => {
+              reset();
+              resetField();
+            }}
+            className="mt-4 w-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-indigo-100 py-2 rounded-md text-lg tracking-wide"
+          >
             Reset Form
           </button>
         </div>
